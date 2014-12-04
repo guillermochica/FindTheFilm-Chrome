@@ -2,7 +2,7 @@
   "manifest_version": 2,
 
   "name": "Find The Film",
-  "description": "This is a simple extension to find basic information about movies very quickly",
+  "description": "A simple extension to find basic information about movies very quickly",
   "version": "1.0",
 
   "content_scripts": [
