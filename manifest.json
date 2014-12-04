@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+
+  "name": "Find The Film",
+  "description": "This is a simple extension to find basic information about movies very quickly",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": ["http://*/*"],
+      "js": ["jquery.js","script.js"]
+    }
+  ],
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  }
+}
