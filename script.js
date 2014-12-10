@@ -3,8 +3,9 @@
 $('document').ready(function() {
     $('#submit').click(function() {
         var title = $('#film').val();
+        var year = $('#inputyear').val();
 
-        $.get( 'http://www.omdbapi.com/?t=' + title + '&y=&plot=short&r=json', function( data ) {
+        $.get( 'http://www.omdbapi.com/?t=' + title + '&y=' + year + '&plot=short&r=json', function( data ) {
           datos = JSON.parse(data);
           $( "#title" ).html('<b>Title: </b>' +  datos.Title);
           $("#year").html('<b>Year: </b>' +  datos.Year);
