@@ -1,5 +1,3 @@
-
-
 $('document').ready(function() {
     $('#submit').click(function() {
         var title = $('#film').val();
@@ -15,7 +13,9 @@ $('document').ready(function() {
           $("#language").html('<b>Language: </b>' +  datos.Language);
           $("#runtime").html('<b>Runtime: </b>' +  datos.Runtime);
           $("#plot").html('<b>Plot: </b>' +  datos.Plot);
-      });
+          var string = '<img src= "' + datos.Poster + '" width="150" height="211"/>';
+          $("#poster").html(string)
+          });
     });
 
 });
