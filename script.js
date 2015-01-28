@@ -14,9 +14,9 @@ $('document').ready(function() {
             $("#runtime").html('<b>Runtime: </b>' +  datos.Runtime);
             $("#plot").html('<b>Plot: </b>' +  datos.Plot);
             var string = '<img src= "' + datos.Poster + '" width="150" height="211"/>';
-            $("#poster").html(string)
+            $("#poster").html(string);
             var link = '<a href="http://www.imdb.com/title/' + datos.imdbID + '">Link to IMDb</a>';
-            $("#link").html(link)
+            $("#imdblink").html(link);
 
           });
         }
