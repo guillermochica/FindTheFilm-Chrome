@@ -3,8 +3,8 @@ $('document').ready(function() {
         var title = $('#film').val();
         var year = $('#inputyear').val();
         if (title != '') {
-          $.get( 'http://www.omdbapi.com/?t=' + title + '&y=' + year + '&plot=short&r=json', function( data ) {
-            datos = JSON.parse(data);
+          $.get( 'http://www.omdbapi.com/?t=' + title + '&y=' + year + '&plot=short&r=json', function( datos ) {
+            //datos = JSON.parse(data);
             $( "#title" ).html('<b>Title: </b>' +  datos.Title);
             $("#year").html('<b>Year: </b>' +  datos.Year);
             $("#director").html('<b>Director: </b>' +  datos.Director);
